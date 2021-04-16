@@ -1,0 +1,31 @@
+<%- include('header') %>
+
+<div class="container">
+
+    <p>Bienvenue sur votre site immobilier</p>
+
+    <a href="/ajouter"><span class="text-gradient">Nouvelle annonce <i class="fas fa-plus"></i></span></a>
+
+    <!-- form handling -->
+    <form action="/" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Titre</th>
+                    <th>Description</th>
+                    <th>Adresse</th>
+                    <th>Ville</th>
+                    <th>Code postal</th>
+                    <th>Prix</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%- include('include/_all') %>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<%- include('footer') %>

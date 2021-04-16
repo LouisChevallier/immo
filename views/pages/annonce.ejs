@@ -1,0 +1,34 @@
+<%- include('header') %>
+
+<div class="container">
+
+    <p>Parcourez sur votre site immobilier</p>
+    
+    <a href="/"><i class="fas fa-angle-double-left"></i> Retour à toutes annonces</a>
+
+    <div class="form-title text-center addannonce">
+        <h2 class="text-dark">Une annonce</h2>
+        <span class="text-light">Ce bien immobilier à vendre vous intéresse?</span>
+    </div>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Adresse</th>
+                <th>Ville</th>
+                <th>Code postal</th>
+                <th>Prix</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%- include('include/_all') %>
+        </tbody>
+    </table>
+
+</div>
+
+<%- include('footer') %>

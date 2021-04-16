@@ -1,0 +1,41 @@
+<!-- form handling -->
+ <form action="/ajouter" method="POST" id="add_annonce">
+    <div class="new_annonce">
+        <div class="form-group">
+            <label for="name" class="text-light">Titre</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="titre" value="" placeholder="Appartement ou maison...">
+        </div>
+        <div class="form-group">
+            <label for="Description" class="text-light">Description</label>
+            <input type="text" name="description" value="" placeholder="Description du bien">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Adresse</label>
+            <input type="text" name="adresse" value="" placeholder="107 avenue Victor Hugo">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Ville</label>
+            <input type="text" name="ville" value="" placeholder="Paris">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Code postal</label>
+            <input type="text" name="code_postal" value="" placeholder="75017">
+        </div>
+        <div class="form-group">
+            <label for="prix" class="text-light">Prix</label>
+            <input type="text" name="prix" value="" placeholder="550 000€">
+        </div>
+        <div class="form-group">
+            <!--<div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Female" >
+                <label for="radio-3" class="radio-label">Female</label>
+            </div>-->
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

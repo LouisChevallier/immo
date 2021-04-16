@@ -1,0 +1,21 @@
+<%- include('header') %>
+
+<div class="container">
+
+    <p>Bienvenue sur votre site immobilier</p>
+    
+    <a href="/"><i class="fas fa-angle-double-left"></i> Retour à toutes annonces</a>
+
+    <div class="addannonce">
+
+        <div class="form-title text-center addannonce">
+            <h2 class="text-dark">Nouvelle annonce</h2>
+            <span class="text-light">Utilisez les champs suivant pour ajouter une nouvelle annonce</span>
+        </div>
+
+        <!-- add user form -->
+        <%- include('include/_form') %>
+    </div>
+</div>
+
+<%- include('footer') %>

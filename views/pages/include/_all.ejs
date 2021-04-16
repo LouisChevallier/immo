@@ -1,0 +1,24 @@
+<!-- all results handling -->
+<% if (locals.ann) { %>
+    <% ann.forEach( function(annonce) { %>
+
+<tr class="ppp">
+    <td class="customid"><%= annonce._id %></td>
+    <td><a href="/annonce/?id=<%= annonce._id %>"> <%= annonce.titre %></a></td>
+    <td><%= annonce.description %></td>
+    <td><%= annonce.adresse %></td>
+    <td><%= annonce.ville %></td>
+    <td><%= annonce.code_postal %></td>
+    <td><%= annonce.prix %></td>
+    <td class="act">
+        <a href="/update/?id=<%= annonce._id %>" class="btn update">
+            <span><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a href="/delete/?id=<%= annonce._id %>" class="btn delete">
+            <span><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+
+<% } ) %>
+<% } %>
