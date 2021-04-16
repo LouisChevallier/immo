@@ -1,13 +1,13 @@
-avant toutes chose :
+Dans ce projet, nous allons créer une application node CRUD avec express et mongodb.
 
-executer:
+Pour exécuter ce projet, clonez-le et installez les modules en utilisant
 
-	#:npm install
+```npm install```
 
-pour installer les dépendance de l'application
+Ensuite, créez le fichier config.env et créez la variable PORT et MONGO_URI et spécifiez la valeur. C'est tout. Vous êtes prêt à partir. Pour exécuter ce projet, tapez simplement
 
-executer:
+```npm run start```
 
-	#:npm run start pour executer le serveur
+Aller sur localhost:8080
 
-aller sur localhost:8080
+C'est parti... !
